@@ -5,18 +5,19 @@ $(function () {
         // Add 'active' class to the clicked option
         $(this).addClass('active');
     });
-    $('#experience').on('click', function () {
-        event.preventDefault();
-        var target = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(target).offset().top
-        }, 1000);
-    });
-    $('#projects').on('click', function () {
-        event.preventDefault();
-        var target = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(target).offset().top
-        }, 1000);
-    });
 });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.card');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target); // Deja de observar el elemento
+                }
+            });
+        }, { threshold: 0.1 }); // El elemento es visible en un 10%
+
+        cards.forEach(card => observer.observe(card));
+    });

@@ -12,27 +12,27 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-  <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+
+  <nav id="navbar" class="navbar navbar-expand-md bg-body-tertiary fixed-top">
     <div class="container-fluid">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <img src="images/Logo PNG Format.png" width="130px" alt="logo" class="img-fluid">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavDropdown">
-        <ul class="nav nav-underline">
+          <a href="/" class="navbar-brand">
+            <img src="images/Logo PNG Format.png" width="130px" alt="logo" class="img-fluid">
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav col-lg-12 justify-content-lg-end">
           <li class="nav-item"><a id="" href="#" class="nav-link active" aria-current="page">Home</a></li>
           <li class="nav-item"><a id="" href="#experience" class="nav-link">Experience</a></li>
           <li class="nav-item"><a id="" href="#projects" class="nav-link">Projects</a></li>
         </ul>
-    </div>
-      </header>
+      </div>
     </div>
     </nav>
-      <div class="divider-header"></div>
-      <section>
-        <div class="px-3 py-1 my-1 text-center">
+
+      <section class="divider-header">
+        <div class="px-3 text-center">
             <img id="imagen-principal" class="d-block mx-auto mb-4" src="images/coding-2-31.svg" alt="" width="300" height="300">
             <h1 class="display-5 fw-bold text-body-emphasis">Web developer</h1>
             <div class="col-lg-6 mx-auto">
@@ -44,8 +44,10 @@
             </div>
           </div>
       </section>
-      <div class="divider"></div>
-      <section id="experience" class="">
+
+      <div id="experience"></div>
+
+      <section>
         <img id="imagen-principal" class="d-block mx-auto mb-4" src="images/personal-data-71(1).svg" alt="" width="300" height="300">
         <h2 class="display-5 text-center fw-bold text-body-emphasis">Experience</h2>
         <div id="container-experience" class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
@@ -55,7 +57,7 @@
                 <div class="d-flex gap-2 w-100 justify-content-between">
                   <div id="banregio">
                     <h6 class="mb-0">Banregio</h6>
-                    <p class="mb-0 opacity-75 px-3 py-3 my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora, nemo animi reprehenderit iusto error obcaecati aut, tenetur ad autem explicabo in illum veritatis! Nobis enim qui nulla iste sunt?</p>
+                    <p class="mb-0 opacity-75 px-3 py-3 my-3">As a web developer, I contributed to the design and development of banking applications using Angular for the front-end and some interactions with Java for the back-end.</p>
                   </div>
                   <small class="opacity-50 text-nowrap">now</small>
                 </div>
@@ -65,7 +67,7 @@
                 <div class="d-flex gap-2 w-100 justify-content-between">
                   <div>
                     <h6 class="mb-0">Accenture</h6>
-                    <p class="mb-0 opacity-75 px-3 py-3 my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quod ab libero voluptate, quis nulla dolorum placeat ipsa obcaecati maiores, inventore harum voluptatum porro tempora labore earum dolorem laborum nesciunt.</p>
+                    <p class="mb-0 opacity-75 px-3 py-3 my-3">Developed and maintained scalable back-end systems using Java, focusing on delivering high-performance solutions for clients in various industries.</p>
                   </div>
                   <small class="opacity-50 text-nowrap">3d</small>
                 </div>
@@ -75,7 +77,7 @@
                 <div class="d-flex gap-2 w-100 justify-content-between">
                   <div id="freelance">
                     <h6 class="mb-0">Freelance</h6>
-                    <p class="mb-0 opacity-75 px-3 py-3 my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptates dolorem similique aperiam nobis labore laboriosam fugit officiis architecto placeat eligendi, saepe error amet possimus autem neque deleniti. Possimus, facere!.</p>
+                    <p class="mb-0 opacity-75 px-3 py-3 my-3">Experienced in delivering tailored solutions for landing pages and e-commerce projects, ensuring user-friendly designs and seamless functionality. Proficient in a wide range of technologies, including WordPress, JavaScript, PHP, Angular, React, and Node.js.</p>
                   </div>
                   <small class="opacity-50 text-nowrap">1w</small>
                 </div>
@@ -241,11 +243,15 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  <p><b>Project onboarding</b></p>
+                  <p>I developed a unified platform of components and tools to optimize the company’s various products, enabling efficient technical convergence and accelerating product delivery timelines.</p>
+                  <p><b>Project insurance</b></p>
+                  <p>I provided support and maintenance for an onboarding application for a bank, using Angular and Spring. In this role, I was responsible for maintaining existing functionality and implementing new features to enhance the application.</p>
+                  <p><b>Project back office insurance.</b></p>
+                  <p>Responsible for Frontend development for a BackOffice platform in the insurance project, enabling agents to efficiently create and manage insurance products.</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-success">Save changes</button>
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
                 </div>
               </div>
             </div>
@@ -260,11 +266,17 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  <p><b>Project - Sigma Alimentos</b></p>
+                  <p>Development of an e-commerce platform using Hybris technology, working as a full stack developer and using Java and JavaScript to create robust and scalable solutions.</p>
+                  <p><b>Project - Golden State Warriors</b></p>
+                  <p>In this project, a collection of REST requests was used in Postman to test different endpoints and their functionality in the stadium’s mobile app.</p>
+                  <p><b>Project - Disneyland Cast App</b></p>
+                  <p>Responsible for testing an application using Java, Selenium, and Cucumber to ensure its proper functionality.</p>
+                  <p><b>Project - Walmart</b></p>
+                  <p>In this project, I developed a testing framework to evaluate various use cases on Walmart's back-office website.</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-success">Save changes</button>
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
                 </div>
               </div>
             </div>
@@ -279,11 +291,11 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  <p>Ecommerce development using WordPress and WooCommerce, along with languages like JavaScript and PHP.</p>
+                  <p>Development of landing pages with Angular and the HTML, CSS, JavaScript, and MySQL stack.</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-success">Save changes</button>
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
                 </div>
               </div>
             </div>

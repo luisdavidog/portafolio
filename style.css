@@ -27,9 +27,9 @@ html {
 
 /* sticky header to the element "nav" */
 #navbar {
-    position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 10px 50px;
 }
 
 /* color of the each option in the navbar */
@@ -43,8 +43,25 @@ a.nav-link:hover {
 
 /* Space ".divider-header" to show the next section after the header" */
 .divider-header {
-    margin-top: 100px;
+    margin-top: 70px;
 }
+
+#experience {
+    margin-top: 70px;
+}
+
+/* show elements with class "card" when are scrolling down and show an animation appearing from the bottom */
+.col > .card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 2.6s ease-out;
+}
+
+.col > .card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* bounce animation in class imagen-principal */
 @keyframes bounce {
