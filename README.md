@@ -1,2 +1,2 @@
 # portafolio
-Portafolio desarrollado con Angular
+Portafolio desarrollado con JavaScript - Bootstrap, Jquery, Json para los datos.
