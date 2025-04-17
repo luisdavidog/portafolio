@@ -17,8 +17,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // Mostrar la sección seleccionada
         if (contentSections[sectionId]) {
             contentSections[sectionId].style.display = 'block';
-            // Scroll suave a la sección
-            contentSections[sectionId].scrollIntoView({ behavior: 'smooth' });
+            // Obtener la altura del navbar
+            const navbar = document.getElementById('navbar');
+            const navbarHeight = navbar.offsetHeight;
+
+            // Calcular la posición de scroll considerando el navbar
+            const elementPosition = contentSections[sectionId].offsetTop - navbarHeight;
+            
+            // Hacer scroll suave a la posición calculada
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
         }
     }
 

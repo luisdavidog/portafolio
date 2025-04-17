@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     padding: 0px;
+    padding-top: 76px; /* Altura del navbar */
     font-family: "Montserrat", sans-serif;
 }
 
@@ -97,15 +98,6 @@ a.nav-link {
 
 a.nav-link:hover {
     color: #8eff72;
-}
-
-/* Space ".divider-header" to show the next section after the header" */
-.cover {
-    margin-top: 70px;
-}
-
-#experience {
-    margin-top: 70px;
 }
 
 /* show elements with class "card" when are scrolling down and show an animation appearing from the bottom */
