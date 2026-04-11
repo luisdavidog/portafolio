@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Senior Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#hero" id="nav-name">—</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#experience" id="nl-0">—</a></li>
+    <li><a href="#skills"     id="nl-1">—</a></li>
+    <li><a href="#projects"   id="nl-2">—</a></li>
+    <li><a href="#contact"    id="nl-3">—</a></li>
+  </ul>
+  <div class="nav-right">
+    <!-- LANG TOGGLE -->
+    <div class="lang-toggle">
+      <button class="lang-btn" id="btn-es" onclick="setLang('es')">ES</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+    <a class="nav-cta" id="nav-cta" href="#">—</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner lang-fade" id="hero-inner">
+      <div class="reveal">
+        <p class="hero-eyebrow"><span class="line"></span><span id="hero-eyebrow">—</span></p>
+        <h1 class="hero-title">
+          <span id="hero-line1">—</span><br>
+          <em id="hero-line2">—</em><br>
+          <span class="accent" id="hero-line3">—</span>
+        </h1>
+        <p class="hero-desc" id="hero-desc">—</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects" id="hero-cta1">—</a>
+          <a class="btn btn-outline"  href="#contact"  id="hero-cta2">—</a>
+        </div>
+      </div>
+      <div class="hero-card reveal" style="transition-delay:0.15s">
+        <div class="hero-card-header">
+          <div class="dot dot-red"></div>
+          <div class="dot dot-yellow"></div>
+          <div class="dot dot-green"></div>
+          <span class="card-title" id="hero-card-title">—</span>
+        </div>
+        <div class="hero-card-body" id="hero-stats"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container lang-fade" id="exp-section">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sec-eyebrow" id="exp-eyebrow">—</p>
+        <h2 class="sec-title"  id="exp-title">—</h2>
+      </div>
+      <span class="sec-count" id="exp-count">—</span>
+    </div>
+    <div class="exp-list" id="exp-list"></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container lang-fade" id="skills-section">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sec-eyebrow" id="skills-eyebrow">—</p>
+        <h2 class="sec-title"  id="skills-title">—</h2>
+      </div>
+      <span class="sec-count" id="skills-count">—</span>
+    </div>
+    <div class="skills-grid" id="skills-grid"></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container lang-fade" id="proj-section">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sec-eyebrow" id="proj-eyebrow">—</p>
+        <h2 class="sec-title"  id="proj-title">—</h2>
+      </div>
+      <span class="sec-count" id="proj-count">—</span>
+    </div>
+    <div class="projects-grid" id="projects-grid"></div>
+  </div>
+</section>
+
+<!-- CONTACT 
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="reveal lang-fade" id="contact-left">
+        <h2 class="contact-title">
+          <span id="contact-title-main">—</span> <em id="contact-title-em">—</em>
+        </h2>
+        <p class="contact-desc" id="contact-desc">—</p>
+        <div class="contact-links" id="contact-links"></div>
+      </div>
+      <div class="reveal" style="transition-delay:0.1s">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="c-name"  id="lbl-name">—</label>
+            <input class="input" id="c-name" type="text" required/>
+          </div>
+          <div class="form-group">
+            <label for="c-email" id="lbl-email">—</label>
+            <input class="input" id="c-email" type="email" required/>
+          </div>
+          <div class="form-group">
+            <label for="c-msg"   id="lbl-msg">—</label>
+            <textarea class="input" id="c-msg" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="form-submit" style="width:100%;justify-content:center">—</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<footer>
+  <span class="footer-left"  id="footer-left">—</span>
+  <span class="footer-right" id="footer-right">—</span>
+</footer>
+<!-- ① Data → ② Translations → ③ App -->
+  <script src="data.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
