@@ -75,7 +75,7 @@ const { meta, experience, projects, skills } = portfolioData;
     //$('contact-title-em').textContent   = tr.contact.titleEm;
     //$('contact-desc').textContent       = tr.contact.desc;
 
-    $('contact-links').innerHTML = tr.contact.links.map(l => `
+    /*$('contact-links').innerHTML = tr.contact.links.map(l => `
       <a class="contact-link" href="${interpolate(l.href, meta)}" target="_blank">
         <span class="contact-link-icon">${l.icon}</span>
         ${interpolate(l.label, meta)}
@@ -92,7 +92,7 @@ const { meta, experience, projects, skills } = portfolioData;
     $('form-submit').textContent     = tr.contact.form.submit;
     $('form-submit').dataset.submit  = tr.contact.form.submit;
     $('form-submit').dataset.sent    = tr.contact.form.submitted;
-
+    */
     // Footer
     $('footer-left').textContent  = interpolate(tr.footer.left, meta);
     $('footer-right').textContent = interpolate(tr.footer.right, meta);
