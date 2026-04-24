@@ -119,7 +119,7 @@ const portfolioData = {
       links: { github: '#', live: 'http://adpyc.com/' }
     },
     {
-      id:       'proj-004',
+      id:       'proj-005',
       featured: true,
       icon:     '⚡',
       visual:   '⚡',
@@ -132,9 +132,24 @@ const portfolioData = {
         en: 'Demo of an AI chatbot.'
       },
       tags:  ['SASS', 'Angular', 'TypeScript'],
-      links: { github: 'https://github.com/luisdavidog/ialab', live: 'https://luisdavidog.github.io/ialab/ia-demo' }
+      links: { github: '#', live: 'https://luisdavidog.github.io/ialab/ia-demo' }
     },
-    
+      {
+      id:       'proj-005',
+      featured: true,
+      icon:     '⚡',
+      visual:   '⚡',
+      title: {
+        es: 'Invitación de Boda',
+        en: 'Wedding Invitation'
+      },
+      description: {
+        es: 'Invitación digital para una boda, con diseño moderno y funcionalidades interactivas.',
+        en: 'Digital invitation for a wedding, with modern design and interactive features.'
+      },
+      tags:  ['HTML', 'CSS', 'JavaScript'],
+      links: { github: '#', live: 'https://luisdavidog.github.io/abigail-y-ramon/' }
+    }
   ],
 
   // ── SKILLS (sin traducción — nombres técnicos universales) ──
