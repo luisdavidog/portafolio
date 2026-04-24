@@ -84,38 +84,57 @@ const portfolioData = {
         en: 'E-commerce platform for electric motorcycles built with WooCommerce. Bulk product insertion via direct SQL, inventory management and dynamic catalog with product variants.'
       },
       tags:  ['WooCommerce', 'SQL', 'WordPress', 'PHP'],
-      links: { github: '#', live: '#' }
+      links: { github: '#', live: 'https://evobikemonterrey.com/' }
     },
     {
       id:       'proj-002',
-      featured: false,
-      icon:     '🎨',
+      featured: true,
+      icon:     '⚡',
+      visual:   '⚡',
       title: {
-        es: 'Mini Design System',
-        en: 'Mini Design System'
+        es: 'Gobierno Municipal Digital Nuevo León',
+        en: 'Digital Government of Nuevo León'
       },
       description: {
-        es: 'Sistema de diseño minimalista con tokens semánticos, dark/light mode y componentes reutilizables. HTML + CSS puro, sin dependencias.',
-        en: 'Minimalist design system with semantic tokens, dark/light mode and reusable components. Pure HTML + CSS, zero dependencies.'
+        es: 'Landing page institucional para el Gobierno Municipal de Nuevo León, desarrollada con WordPress y WooCommerce. Gestión de contenido dinámico, integración de formularios personalizados y optimización SEO para mejorar la presencia digital del municipio.',
+        en: 'Institutional landing page for the Municipal Government of Nuevo León, developed with WordPress and WooCommerce. Dynamic content management, integration of custom forms and SEO optimization to improve the digital presence of the municipality.'
       },
-      tags:  ['HTML', 'CSS', 'Design Tokens'],
-      links: { github: '#', live: '#' }
+      tags:  ['WooCommerce', 'SQL', 'WordPress', 'PHP'],
+      links: { github: '#', live: 'https://higuerasnuevoleon.gob.mx/' }
     },
     {
       id:       'proj-003',
-      featured: false,
-      icon:     '🏦',
+      featured: true,
+      icon:     '⚡',
+      visual:   '⚡',
       title: {
-        es: 'Plataforma Bancaria Digital',
-        en: 'Digital Banking Platform'
+        es: 'Adpyc',
+        en: 'Adpyc'
       },
       description: {
-        es: 'Módulos frontend para banca digital en Banregio. Componentes accesibles, integración con APIs de core bancario y optimización de rendimiento.',
-        en: 'Frontend modules for digital banking at Banregio. Accessible components, core banking API integration and performance optimization.'
+        es: 'Landing page empresa de recursos humanos.',
+        en: 'Landing page for a human resources company.'
       },
-      tags:  ['Angular', 'NgRx', 'RxJS', 'REST'],
-      links: { github: '#', live: '#' }
-    }
+      tags:  ['CSS', 'JavaScript', 'PHP'],
+      links: { github: '#', live: 'http://adpyc.com/' }
+    },
+    {
+      id:       'proj-004',
+      featured: true,
+      icon:     '⚡',
+      visual:   '⚡',
+      title: {
+        es: 'IA Chatbot',
+        en: 'AI Chatbot'
+      },
+      description: {
+        es: 'Demo de un chatbot de inteligencia artificial.',
+        en: 'Demo of an AI chatbot.'
+      },
+      tags:  ['SASS', 'Angular', 'TypeScript'],
+      links: { github: 'https://github.com/luisdavidog/ialab', live: 'https://luisdavidog.github.io/ialab/ia-demo' }
+    },
+    
   ],
 
   // ── SKILLS (sin traducción — nombres técnicos universales) ──

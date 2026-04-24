@@ -142,11 +142,31 @@ const { meta, experience, projects, skills } = portfolioData;
 
   // ── RENDER PROJECTS ───────────────────────
   function renderProjects(lang) {
-    $('projects-grid').innerHTML = projects.map(p => p.featured ? `
-      <div class="project-card featured reveal">
-        <div style="display:flex;flex-direction:column">
+    $('projects-grid').innerHTML = projects.map(p => {
+      const projectIcon = p.image
+        ? `<div class="project-icon"><img src="${p.image}" alt="${t(p.title, lang)}" /></div>`
+        : `<div class="project-icon">${p.icon}</div>`;
+
+      return p.featured ? `
+        <div class="project-card featured reveal">
+          <div style="display:flex;flex-direction:column">
+            <div class="project-header">
+              ${projectIcon}
+              <div class="project-links">
+                <a class="project-link" href="${p.links.live}">↗</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">${t(p.title, lang)}</h3>
+              <p class="project-desc">${t(p.description, lang)}</p>
+              <div class="project-tags">${tags(p.tags)}</div>
+            </div>
+          </div>
+          <div class="project-visual">${p.visual}</div>
+        </div>` : `
+        <div class="project-card reveal">
           <div class="project-header">
-            <div class="project-icon">${p.icon}</div>
+            ${projectIcon}
             <div class="project-links">
               <a class="project-link" href="${p.links.live}">↗</a>
             </div>
@@ -156,22 +176,8 @@ const { meta, experience, projects, skills } = portfolioData;
             <p class="project-desc">${t(p.description, lang)}</p>
             <div class="project-tags">${tags(p.tags)}</div>
           </div>
-        </div>
-        <div class="project-visual">${p.visual}</div>
-      </div>` : `
-      <div class="project-card reveal">
-        <div class="project-header">
-          <div class="project-icon">${p.icon}</div>
-          <div class="project-links">
-            <a class="project-link" href="${p.links.live}">↗</a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3 class="project-title">${t(p.title, lang)}</h3>
-          <p class="project-desc">${t(p.description, lang)}</p>
-          <div class="project-tags">${tags(p.tags)}</div>
-        </div>
-      </div>`).join('');
+        </div>`;
+    }).join('');
   }
 
   // ── OBSERVERS ─────────────────────────────
